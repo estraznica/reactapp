@@ -1,0 +1,107 @@
+@import "../../null.css";
+
+.wrapper-session {
+  height:100vh;
+  min-height: 300px;
+  width:700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+header {
+  height: 70px;
+  width: 100%;
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #3499EC;
+  color:white;
+  font-size: 26px;
+  font-weight: 600;
+}
+.messages{
+  width:100%;
+  background-color:#d8eeff;
+  height: 100%;
+  overflow-y: auto;
+  
+}
+.messages::-webkit-scrollbar {
+  width: 12px; 
+}
+
+.messages::-webkit-scrollbar-track {
+  background: #B8DFFF;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #5BABEC;
+  border-radius: 20px; 
+}
+.entry-field {
+  height: 150px;
+  width: 100%;
+  background-color: #99D1FF;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center
+}
+input{
+  width:  550px;
+  height: 50px;
+  border-radius: 15px;
+  padding:10px;
+}
+input:focus{
+  width:  551px;
+  height: 51px;
+  border: 1px solid #3499EC;
+}
+button{
+  background-color: #99D1FF;
+  position: relative;
+  width: 70px;
+  height: 70px;transition: 0.2s;
+}
+button:hover{
+  transform: scale(0.95);
+}
+svg#send {
+  position: absolute;
+  right: 10px;
+  top:15px;
+}
+
+.user-id{
+  padding-top:5px;
+  margin-left: 20px;
+}
+.message {
+  display:flex;
+  flex-direction: column;
+  min-height: 50px;
+  max-width: 665px;
+  width:fit-content;
+  height:auto;
+  word-wrap: break-word;
+  background-color: white;
+  padding: 15px;
+  margin-top:5px;
+  margin-bottom: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  border-radius: 15px;
+  font-size: 20px;
+  line-height: normal;
+}
+.no-messages{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
